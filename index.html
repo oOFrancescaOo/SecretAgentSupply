@@ -8,61 +8,75 @@
 <body>
   <!-- Header -->
   <header>
-    <img src="./resources/logo.png" alt="Binocular Logo Secret Agent Supply">
-    <h2>Secret Agent Supply</h2>
+    <div class="container flex">
+      <img src="./resources/logo.png" alt="Binocular Logo Secret Agent Supply">
+      <span>Secret Agent Supply</span>
+    </div>
   </header>
 
   <!-- Content section -->
-  <main>
 
     <!-- Full width banner -->
-    <banner>
-      <h3>New Arrival<h3>
-      <h1>Sport Bikes and Motorcycles</h1>
-    </banner>
+    <div class="banner flex">
+      <div class="container">
+        <div id="headline-box">
+          <h3>New Arrival<h3>
+          <h1>Sport Bikes and Motorcycles</h1>
+        </div>
+      </div>
+    </div>
 
     <!-- Full width Navigation -->
     <nav>
-      <span><a href="#">Eyewear</a></span>
-      <span><a href="#">Apparel</a></span>
-      <span><a href="#">Gadgets</a></span>
-      <span><a href="#">Vehicles</a></span>
-      <span><a href="#">Classes</a></span>
-      <span><a href="#">Contact</a></span>
+      <div class="container flex space-between">
+        <span><a href="#">Eyewear</a></span>
+        <span><a href="#">Apparel</a></span>
+        <span><a href="#">Gadgets</a></span>
+        <span><a href="#">Vehicles</a></span>
+        <span><a href="#">Classes</a></span>
+        <span><a href="#">Contact</a></span>
+      </div>
     </nav>
 
     <!-- Product grid -->
-    <section id="products">
-      <product>
-        <img src="./resources/pen.png" alt="Exploding Pen">
+    <section class="container flex space-between" id="products">
+      <div class="product flex">
+        <div class="flex">
+          <img src="./resources/pen.png" alt="Exploding Pen">
+        </div>
         <span>Exploding Pen</span>
-      </product>
-      <product>
-        <img src="./resources/watch.png" alt="Silver Watch">
+      </div>
+      <div class="product flex">
+        <div class="flex">
+          <img src="./resources/watch.png" alt="Silver Watch"><span>
+        </div>
         <span>Cellular Watch</span>
-      </product>
-      <product>
-        <img src="./resources/glasses.png" alt="Thermal Glasses">
+      </div>
+      <div class="product flex">
+        <div class="flex">
+          <img src="./resources/glasses.png" alt="Thermal Glasses">
+        </div>
         <span>Thermal Glasses</span>
-      </product>
+      </div>
     </section>
 
     <!-- Location and Opening Hours -->
-    <section id="contact">
-      <div>
+    <section class="container flex space-between" id="contact">
+      <div class="contact-container">
         <span>Location</span>
         <p>-47.346436, 84.32354</p>
       </div>
-      <div>
+      <div class="contact-container">
         <span>Hours</span>
         <p>0800 - 1800</p>
       </div>
     </section>
-  </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="flex">
+    <div class="container">
     Copyright Secret Agent Supply Inc.
+    </div>
   </footer>
 
 
