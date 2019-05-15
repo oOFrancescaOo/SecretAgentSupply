@@ -7,12 +7,14 @@ body {
   color: white;
 }
 
-h1, h3, header span {
+h1, h3 {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 h1 {
   font-size: 2rem;
+  padding-top: 0.25rem;
 }
 
 p {
@@ -47,6 +49,10 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+banner .container {
+  margin: 0;
 }
 
 .flex {
@@ -100,7 +106,7 @@ nav {
 }
 
 section {
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 #contact span {
@@ -118,4 +124,92 @@ footer {
   text-align: left;
   height: 5rem;
   padding: auto 0;
+}
+
+#menu {
+  display: none;
+}
+
+
+@media only screen and (min-width: 471px) and (max-width: 1024px) {
+
+  .product {
+    width: 47%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #menu {
+    display: inline;
+  }
+
+  #menu .flex {
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .banner {
+    height: 15rem;
+  }
+
+  #headline-box {
+    padding: 5%;
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 0.77rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #products, #menu .flex, #contact {
+    justify-content: center;
+  }
+
+  #glasses, #watch {
+    display: none;
+  }
+
+  .product, .contact-container {
+    width: 90%;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #menu {
+    display: inline;
+  }
+
+  #contact {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #copyright {
+    text-align: center;
+  }
+
 }
